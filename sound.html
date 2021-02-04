@@ -1,0 +1,90 @@
+<div class="container">
+  <div class="square"></div>
+  <div class="triangle"></div>
+  <div class="semi-circle a"></div>
+  <div class="semi-circle b"></div>
+  <div class="semi-circle c"></div>
+  <div class="semi-circle d"></div>
+  <div class="semi-circle e"></div>
+  <div class="semi-circle f"></div>
+</div>
+<style>
+  *{
+    margin:0;
+    padding:0;
+    background:#191919;
+  }
+  .container{
+    display:flex;
+    justify-content:center;
+  }
+  .square{
+    background:#5DBCF9;
+    position:absolute;
+    height:50px;
+    width:100px;
+    z-index:120;
+    border-radius:10px;
+    transform:translate(-75%,250%);
+  }
+  .triangle{ 
+  	width: 0; 
+  	height: 0; 
+    position:absolute;
+    transform:translate(-50%,25%);
+  	border-top: 100px solid transparent;
+  	border-bottom: 100px solid transparent; 
+  	border-right: 100px solid #5DBCF9;
+  }
+  .semi-circle{  
+    background:#5DBCF9;
+    height:100px;
+    width:200px;
+    border-radius:150px 150px 0 0;
+    transform: translate(-50%, -50%);
+    transform:rotate(90deg);
+  }
+  .a{  
+    position:absolute;
+    height:40px;
+    width:80px;
+    background:#191919;
+    z-index:150;  
+    margin:130px 0 0 90px;
+  }
+  .b{
+    height:50px;
+    width:100px;
+    position:absolute;
+    z-index:120;
+    margin:125px 0 0 100px;
+  }
+  .c{
+    position:absolute;
+    height:65px;
+    width:130px;
+    z-index:80;
+    background:#191919;
+    margin:117px 0 0 114px;
+  }
+  .d{
+    position:absolute;
+    height:75px;
+    width:150px;
+    z-index:70;
+    margin:112px 0 0 126px;
+  }
+  .e{
+    position:absolute;
+    height:90px;
+    width:180px;
+    z-index:60;
+    background:#191919;
+    margin:105px 0 0 140px;
+  }
+  .f{
+     position:absolute;
+    z-index:50;
+    margin:100px 0 0 150px;
+  }
+</style>
