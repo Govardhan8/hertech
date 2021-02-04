@@ -1,0 +1,54 @@
+<div class="app">
+<div class="container">
+  <div class="orange"></div>
+  <div class="sun"></div>
+  <div class="brown"></div>
+ </div>
+</div>
+<style>
+  *{
+    margin:0;
+    padding:0;
+    background: #191919;
+  }
+  .app{
+    display:flex;
+    justify-content:center;
+   
+  }
+  .container{
+    display:flex;
+    margin-top:16.5vh;
+    background:#F2AD43;
+    height:200px;
+    width:150px;
+    overflow:hidden;
+    position:relative;
+    border-radius:100px 100px 30px 30px ;
+  }
+  .brown{
+    height:200px;
+    width:200px;
+    position:absolute;
+    background:#824B20;
+    border-radius:50%;  
+    margin:100px 0 0 50px;
+  }
+  .orange{
+    height:200px;
+    width:200px;
+    position:absolute;
+    background:#E08027;
+    border-radius:50%;
+    margin-top:100px;
+    transform:translateX(-50%)
+  }
+  .sun{
+    height:60px;
+    width:60px;
+    background:#FFF58F;
+    border-radius:50%;
+   align-self:center;
+    margin:40px 0 0 45px;
+  }
+</style>
